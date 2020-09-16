@@ -14,11 +14,10 @@ namespace leviathan.worldobjects.items.edibles
 
         public void Consume(WorldObject obj, ConsumptionTargetInfo info)
         {
-            
 
-            if (obj is IConsumer)
+
+            if (obj is IConsumer consumer)
             {
-                IConsumer consumer = (IConsumer)obj;
                 consumer.Consume(this);
             }
 

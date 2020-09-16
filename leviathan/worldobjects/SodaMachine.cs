@@ -43,12 +43,12 @@ namespace leviathan.worldobjects
 
             WorldObject item = Inventory.Pop();
 
-            if (this.hackState == HackState.ShakeOnDispense && item is IShakable)
+            if (this.hackState == HackState.ShakeOnDispense && item is IShakable shakable)
             {
-                item.shake();
+                shakable.Shake();
             }
 
-            Engine.Spawn(, localDispensePosition);
+            Engine.Spawn(item, localDispensePosition);
         }
 
 

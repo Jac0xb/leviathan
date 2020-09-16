@@ -6,6 +6,6 @@ namespace leviathan.worldobjects.items.edibles
 {
     interface IEdible
     {
-        void Consume(WorldObject obj);
+        void Consume(WorldObject obj, ConsumptionTargetInfo info);
     }
 }
