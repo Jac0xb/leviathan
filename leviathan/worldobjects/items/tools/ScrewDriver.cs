@@ -2,9 +2,10 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace levitation.worldobjects
+namespace leviathan.worldobjects.items.tools
 {
-    public class WorldObject: IWorldObject
+    class ScrewDriver: WorldObject
     {
+
     }
 }

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace levitation.worldobjects.items.edibles
+namespace leviathan.worldobjects.items.edibles
 {
     interface IEdible
     {

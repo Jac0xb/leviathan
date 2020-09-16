@@ -1,7 +1,7 @@
-﻿using levitation.worldobjects;
-using levitation.worldobjects.traits;
+﻿using leviathan.worldobjects;
+using leviathan.worldobjects.traits;
 
-namespace levitation
+namespace leviathan
 {
     public class Player : WorldObject, IConsumer
     {

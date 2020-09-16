@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace levitation.worldobjects
+namespace leviathan.worldobjects.traits
 {
-    public interface IWorldObject
+    public interface ISmall: IItem
     {
     }
 }

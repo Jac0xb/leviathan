@@ -1,8 +1,8 @@
-﻿using levitation.worldobjects.traits;
+﻿using leviathan.worldobjects.traits;
 using System;
 using System.Timers;
 
-namespace levitation.worldobjects.items.edibles
+namespace leviathan.worldobjects.items.edibles
 {
     class SodaCan: IEdible, ISmall, IShakable
     {
@@ -12,8 +12,9 @@ namespace levitation.worldobjects.items.edibles
         private bool shook_ = false;
         private Timer shookTimer_;
 
-        public void Consume(WorldObject obj)
+        public void Consume(WorldObject obj, ConsumptionTargetInfo info)
         {
+            
 
             if (obj is IConsumer)
             {

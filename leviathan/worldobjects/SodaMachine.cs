@@ -1,15 +1,15 @@
-﻿using levitation.worldobjects.items.tools;
-using levitation.worldobjects.traits;
+﻿using leviathan.worldobjects.items.tools;
+using leviathan.worldobjects.traits;
 using System;
 using System.Collections.Generic;
-namespace levitation.worldobjects
+namespace leviathan.worldobjects
 {
     class SodaMachine: WorldObject
     {
         public enum HackState
         {
             ExplodeOnPurchase,
-            ShakeSoda,
+            ShakeOnDispense,
             ShootCans
         }
 
@@ -43,9 +43,9 @@ namespace levitation.worldobjects
 
             WorldObject item = Inventory.Pop();
 
-            if (this.hackState == HackState.ExplodeOnPurchase)
+            if (this.hackState == HackState.ShakeOnDispense && item is IShakable)
             {
-
+                item.shake();
             }
 
             Engine.Spawn(, localDispensePosition);

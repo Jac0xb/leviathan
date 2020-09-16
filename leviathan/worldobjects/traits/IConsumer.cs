@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace levitation.worldobjects.traits
+namespace leviathan.worldobjects.traits
 {
     public interface IConsumer: IWorldObject
     {
