@@ -4,7 +4,7 @@ using System;
 using System.Collections.Generic;
 namespace leviathan.worldobjects
 {
-    class SodaMachine: WorldObject
+    public class SodaMachine: WorldObject
     {
         public enum HackState
         {
@@ -77,6 +77,11 @@ namespace leviathan.worldobjects
         public void Hack(WorldObject envoker, HackState state)
         {
 
+        }
+
+        public Stack<WorldObject> GetInventory()
+        {
+            return this.Inventory;
         }
     }
 

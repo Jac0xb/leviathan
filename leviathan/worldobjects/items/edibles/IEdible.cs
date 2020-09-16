@@ -4,7 +4,7 @@ using System.Text;
 
 namespace leviathan.worldobjects.items.edibles
 {
-    interface IEdible
+    interface IEdible: IItem
     {
         void Consume(WorldObject obj, ConsumptionTargetInfo info);
     }

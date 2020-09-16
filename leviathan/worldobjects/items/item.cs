@@ -2,7 +2,7 @@
 {
 
 
-    class Item: IItem
+    public class Item: WorldObject, IItem
     {
 
         int weight;

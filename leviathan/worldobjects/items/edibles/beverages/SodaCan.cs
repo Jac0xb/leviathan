@@ -4,7 +4,7 @@ using System.Timers;
 
 namespace leviathan.worldobjects.items.edibles
 {
-    class SodaCan: IEdible, ISmall, IShakable
+    public class SodaCan: Item, IEdible, ISmall, IShakable
     {
         readonly static string Name = "Soda";
 
@@ -21,7 +21,7 @@ namespace leviathan.worldobjects.items.edibles
                 consumer.Consume(this);
             }
 
-            throw new System.NotImplementedException();
+            throw new NotImplementedException();
         }
 
         public void Explode()
