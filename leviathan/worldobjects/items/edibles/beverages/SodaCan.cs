@@ -33,6 +33,7 @@ namespace leviathan.worldobjects.items.edibles
         {
 
             if (this.shook_) this.Explode();
+            if (this.shookTimer_ != null) this.shookTimer_.Dispose();
 
             this.shookTimer_ = new Timer(30*1000);
             this.shookTimer_.Elapsed += (sender, e) => { this.shook_ = false; };
@@ -41,7 +42,7 @@ namespace leviathan.worldobjects.items.edibles
 
         public bool isShook()
         {
-            return true;
+            return this.shook_;
         }
 
     }
