@@ -2,9 +2,10 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace levitation.worldobjects.traits
+namespace levitation.worldobjects.items.tools
 {
-    public interface ISmall: IItem
+    class ScrewDriver: WorldObject
     {
+
     }
 }

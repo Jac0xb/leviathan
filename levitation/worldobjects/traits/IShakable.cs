@@ -4,7 +4,9 @@ using System.Text;
 
 namespace levitation.worldobjects.traits
 {
-    public interface ISmall: IItem
+    public interface IShakable: IItem
     {
+        void Shake();
+        bool isShook();
     }
 }

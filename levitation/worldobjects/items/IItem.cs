@@ -1,6 +1,6 @@
 ﻿namespace levitation.worldobjects
 {
-    interface IItem: IWorldObject
+    public interface IItem: IWorldObject
     {
     }
 }
