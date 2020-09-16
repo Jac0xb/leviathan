@@ -35,7 +35,7 @@ namespace levitation.worldobjects.items.edibles
             if (this.shook_) this.Explode();
 
             this.shookTimer_ = new Timer(30*1000);
-            this.shookTimer_.Elapsed += (sender, e) => { this.shook_ = false; }
+            this.shookTimer_.Elapsed += (sender, e) => { this.shook_ = false; };
             this.shookTimer_.Start();
         }
 
